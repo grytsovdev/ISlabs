@@ -1,6 +1,29 @@
-main 
- article 
-  section 
-   h2 Шаблон
- article 
-  h2 Наші тваринки   
+main
+  .container
+    .search
+     .picture
+     .select-container 
+      label(for="search") Виберіть критерій пошуку 
+      select(name='search')#searchType
+       option(value="age") За віком
+       option(value="type") За Типом
+       option(value="city") За Містом
+     input.animal-input#input(type="text")
+     button.search-button#searchButton
+    .animal
+      button.back#back
+      .animal-photo#pic
+      .animal-desc
+        h1#name Мурка
+        p#desc Мурка - спокійна тварина, яка любить спати на сонці та гратися зі стрункою мишкою.
+        ul.more-info
+          li
+            p.age Вік:
+            p#age 5
+          li
+            p.type Вид:
+            p#type Кіт
+          li
+            p.city Місто:
+            p#city Київ
+      button.front#front

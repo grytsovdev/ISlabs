@@ -1,0 +1,36 @@
+@import 'mixin';
+
+.main-footer{
+    @include flex();
+    background-color: $footer-color;
+    max-height:190px ;
+    
+}
+
+.content{
+    @include flex-between();
+   width: 1348px;
+   height: 105px;
+}
+
+.buttons{
+    @include flex-between();
+}
+
+.link{
+    @include a($white,$orange)
+}
+
+.table{
+    text-align: start;
+}
+.elem{
+    margin-bottom: 15px;
+}
+
+.elem:last-child{
+    margin-bottom: 0px;
+}
+.elem:first-child{
+    color: $orange;
+}
